@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+.barraSuperior{
+    height: 50px;
+    background-color: #2e2e2e;
+    color: rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.contenedorPrincipal{
+    padding: 20px;
+}
+
+.cuadroBusqueda{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.textField{
+    width: 60vw;
+    padding:10px;
+    border: 1px solid rgb(206, 206, 206);
+    outline: none;
+}
+
+
+.button{
+    width: 100px;
+    padding: 10px;
+    background-color: #b3b3b3;
+    color:#000;
+    border:1px solid transparent;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #d4d4d4;
+    color: #000;
+}
+
+.infoPokemon{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+}
+.seccion-50{
+    width: 50%;
+    padding: 10px;
+}
+
+.img-pokemon{
+    width: 100%;
+}
+
+.desc-pokemon{
+    font-size: 14px;
+    width: 60vw;
+    padding:15px;
+}
+
+.tituloPokemon{
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.tituloLista{
+    background-color: rgb(235, 235, 235);;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding:10px;
+    font-weight: 500;
+}
+.elementoLista{
+    padding:10px;
+    border-bottom: 1px solid rgb(235, 235, 235);;
+}
+.elementoLista:last-child{
+    border-bottom:none;
+}
+
+.listComponent{
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+}
+.numeroPokemon{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+@media(max-width: 480px){
+    .infoPokemon{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion-50{
+        width: 100%;
+        padding: 0px;
+    }
+    .contenedorPrincipal{
+        padding: 10px;
+    }
+    .desc-pokemon{
+        font-size: 14px;
+        width: 100%;
+        padding:0px;
+    }
+    .tituloPokemon{
+        text-align: center;
+    }
+}
+
