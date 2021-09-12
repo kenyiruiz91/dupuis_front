@@ -23,7 +23,7 @@ function Home() {
   }, [])
 
   const getPokemon = () =>{
-    axios.post('http://localhost:3001/api/pokemon/search',{pokemon:search}).then((response) => {
+    axios.post('https://back.dupuis.tuwebinteligente.com/api/pokemon/search',{pokemon:search}).then((response) => {
       if(response.data.success){
         setPokemon(response.data.result);
       }else{
@@ -140,7 +140,7 @@ function Home() {
           <div className="seccion-50">
               <div className="numeroPokemon">#{pokemon.id}</div>
               <ListComponent titulo="Movimientos" elementos={pokemon.movimientos} />
-              <ListComponent titulo="Propiedades" elementos={[pokemon.altura + ' cm.', pokemon.peso + ' kg.', pokemon.ability, setTipo(pokemon.tipos)]} />
+              <ListComponent titulo="Propiedades" elementos={['Altura: ' + pokemon.altura + ' cm.', 'Peso: ' + pokemon.peso + ' kg.', 'Habilidad: ' + pokemon.ability, setTipo(pokemon.tipos)]} />
           </div>
         </div>
         <div className="desc-pokemon">
